@@ -74,6 +74,7 @@ export class ShowroomComponent implements OnInit {
         };
       }
       htmlString += `
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <img src="${project.images}" class="card-image" alt="...">
         </div>        
         <div class="card-body">
@@ -148,6 +149,7 @@ export class ShowroomComponent implements OnInit {
 
     htmlString+=`<div class="card card-detail" id="card-detail">
         <div class="card-image-container">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
           <img src="${project.images}" class="card-image" alt="...">
         </div>
         <div class="card-body">
